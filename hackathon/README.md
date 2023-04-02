@@ -95,3 +95,5 @@ MYSQL_DATABASE = inventory_db
 MYSQL_PASSWORD = pass
 MYSQL_USERNAME = root
 MYSQL_SERVICE_HOST = localhost
+
+# EXTRA: If you have time, add an EFK log aggregation layer to your system of microservices
