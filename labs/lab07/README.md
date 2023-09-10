@@ -1,12 +1,5 @@
-# Lab 07 - PersistentVolumes
+# Lab 07 - Deploying WordPress and MySQL
 
-Use https://github.com/KernelGamut32/kiamol/tree/master/ch05. Forked from https://github.com/sixeyed/kiamol that accompanies a great book called "Learn Kubernetes in a Month of Lunches" by Elton Stoneman.
+Walk through the tutorial defined at https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/. Utilize either a local instance of k8s using Docker-Desktop with Kubernetes enabled (or another comparable option) or a remote instance to which you have permission to execute resource creation against.
 
-* Deploy the app manifests in the ch05/lab/todo-list folder - this will create the initial resources.
-* Examine the manifests to get a sense of what's being created and how it relates together.
-* Try hitting the URL for the LoadBalancer and try using the application - it won't respond.
-* Dig into the logs to figure out what's wrong and identify the expected names for the missing mount targets.
-* Configure persistent storage for the proxy cache files and for the database file in the web pod.
-* Run the app and add some data.
-* Delete all pods and refresh browser to confirm your added data is still present.
-* Use any volume type of storage class you choose.
+**NOTE: If you already have `Docker Desktop` installed, you don't need to use `minikube` as called out in the tutorial - you can skip it and use `Docker Desktop` exclusively.**
